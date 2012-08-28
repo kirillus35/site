@@ -1,8 +1,11 @@
 pma
 xampp
 rkop
+images
 forbidden
 restricted
 apache*
 index.html
-rkop	
+test.php
+*.jpg
+	

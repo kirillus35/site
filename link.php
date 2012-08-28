@@ -5,7 +5,7 @@
             {
             ?>  	 
                <li>
-                  <a href="<?=$li['page']?>"><?=$li['title']?></a>
+                  <a href="<?=$li['page']?>" target="_blank"><?=$li['title']?></a>
                </li>
              <?}?>   
         </ul>

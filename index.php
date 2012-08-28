@@ -19,12 +19,36 @@ $query = mysql_query("SELECT * FROM menu WHERE page='$page'") or die (mysql_erro
 $title = mysql_fetch_array($query);
 //print_r($title);
 $title = $title['title'] . ' | Сайт 10а класса'; ?>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title><?=$title?></title>
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="fancybox/lib/jquery-1.8.0.min.js"></script>
 
-<style >
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox main JS and CSS files -->
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.0"></script>
+  <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.0" media="screen" />
+
+  <!-- Add Button helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
+
+  <!-- Add Thumbnail helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.6" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>
+
+  <!-- Add Media helper (this is optional) -->
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.3"></script>
+<style>
+    
+  .fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+  }
 
 * {
  margin: 0;
@@ -78,7 +102,7 @@ div.footer {
  height: 30px;
  clear: both;
  background: #427eab;
- opacity: 0.88;
+ opacity: 0.92;
  //border-top: 1px solid #cfba94;
  text-align: center;
  font-size: 12px;
@@ -129,14 +153,23 @@ div.page div.mainbar {
   list-style-type: none;
   }
 
-a:link , a:visited{
+.name_travels{
+   float: left;
+ list-style-type: none;
+ padding-top: 55px;
+ padding-left: 40px;
+font-size: 20px; 
+}
+  
+
+div.link a:link , a:visited{
   color: #0000d0;
   display: block;
    margin: 4px 7px;
     padding: 4px 7px;
 }
 
-a:hover, a:active ,a.active{
+div.link a:hover, a:active ,a.active{
   text-decoration: none;
   background-color: #2871a8;
   color: white;
@@ -144,7 +177,51 @@ a:hover, a:active ,a.active{
  -webkit-box-shadow: 0px 6px 20px rgba(50, 50, 50, 0.55);
 -moz-box-shadow:    0px 6px 20px rgba(50, 50, 50, 0.55);
 box-shadow:         0px 6px 20px rgba(50, 50, 50, 0.55);
-} 
+}
+
+.links a:link , a:visited{
+  color: #0000d0;
+  display: block;
+   margin: 4px 7px;
+    padding: 4px 7px;
+}
+
+.links a:hover, a:active ,a.active{
+  text-decoration: none;
+  background-color: #2871a8;
+  color: white;
+  font-size: 17px;
+ -webkit-box-shadow: 0px 6px 20px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    0px 6px 20px rgba(50, 50, 50, 0.55);
+box-shadow:         0px 6px 20px rgba(50, 50, 50, 0.55);
+}
+
+div.travels{
+padding-top: 10px;
+width: 760px;
+height: 160px;
+ text-align: center;
+border-bottom: 1px solid #D0C7B7;
+font-size: 17; 
+padding-left: 80px;
+padding-bottom: 4px;
+}
+
+div.travels a:link {
+ text-decoration: none;
+  color: #0000d0;
+}
+
+div.travels a:active{
+  text-decoration: none;
+  background-color: white;
+  color:black ;
+  font-size: 20px;
+-webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    0px 0px 0px rgba(50, 50, 50, 0.55);
+box-shadow:         0px 0px 0px rgba(50, 50, 50, 0.55);
+}
+
 
 .mainbar table{
 width:100%;
