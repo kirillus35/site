@@ -40,12 +40,9 @@ html {
 
 body {
 
- min-height:99%;
+ min-height:98%;
  height: 99%;
- /*---------------*/
-
  background: white;
-
  color: #000;
  font-weight: normal;
  font-family: Arial, Verdana, Helvetica, Sans-Serif;
@@ -67,7 +64,7 @@ div.page {
 
 
 div.page div.footer_guarantor {
- height: 50px;
+ height: 60px;
  clear: both;
  text-align: right;
  color: white;
@@ -76,12 +73,13 @@ div.page div.footer_guarantor {
 
 div.footer {
  margin: auto;
- margin-top: -30px;
+ margin-top: -22px;
  width: 760px;
  height: 30px;
  clear: both;
- background: white;
- border-top: 2px solid #D0C7B7;
+ background: #427eab;
+ opacity: 0.88;
+ //border-top: 1px solid #cfba94;
  text-align: center;
  font-size: 12px;
 }
@@ -89,8 +87,8 @@ div.footer {
 
 div.page div.header {
  height: 95px;
- background: #3a6a8e url(images/header_main.jpg) no-repeat;
- background-size: 50%;
+ background: #3a6a8e url(images/header_main1.jpg) no-repeat;
+ background-size: 49%;
 }
 
 div.page div.link {
@@ -102,7 +100,7 @@ div.page div.link {
 
 div.page div.patch_minheight {
  width: 1px;
- height: 20px;
+ height: 30px;
  float: right;
 }
 
@@ -142,6 +140,7 @@ a:hover, a:active ,a.active{
   text-decoration: none;
   background-color: #2871a8;
   color: white;
+  font-size: 17px;
  -webkit-box-shadow: 0px 6px 20px rgba(50, 50, 50, 0.55);
 -moz-box-shadow:    0px 6px 20px rgba(50, 50, 50, 0.55);
 box-shadow:         0px 6px 20px rgba(50, 50, 50, 0.55);
@@ -173,7 +172,22 @@ padding-left: 35px;
 font-weight: bold;
 font-size: 18;	
 }
+.links{
+ list-style-type: none;
+ text-align: center;
+ text-decoration:none; 
+ padding-top: 15px;
+}
+.links li{
+ padding-top: 5px;
+}
 
+.fot{
+ padding-top: 9px; 
+ font-size:14px;
+ color: black;
+ font-stretch:condensed;
+}
 
 </style>
 </head>
@@ -215,7 +229,7 @@ font-size: 18;
 </div>
 
 <div class="footer">
-&copy; 2012 Кузнецов Кирилл <br> Кукушкин Тимофей
+<p class="fot">&copy; 2012 Кузнецов Кирилл & Кукушкин Тимофей</p>
 </div>
 </body>
 </html>
