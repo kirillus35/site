@@ -6,6 +6,6 @@
 <div class="news">
 	<? echo date( 'd-m-Y в H:i', strtotime($row['date'])); ?>
 	<p class="title">"<?=$row['title']?>"</p>
-	<p> <?=$row['content']?> </p>
+	<p class="news_content"> <?=$row['content']?> </p>
 </div>
 <? } ?>

@@ -30,7 +30,8 @@
 			?>
 	 		<a class="fancybox-effects-c" data-fancybox-group="<?=$w['id']?>" href="images/<?=$p['id']?>.jpg" title="<?=$p['content']?>"><img src="images/<?=$p['id']?>.jpg" alt="" /></a>
 	  	<?}?>
-		</div></li>
+		</div>
+	</li>
 	<li class="name_travels"><a <?if ($w['content']) {?>id="inline" href="#<?=$w[id]?>"<?}?>> "<?=$w['name']?>" </a></li>	
 </ul>
 	
@@ -42,37 +43,4 @@
 
 </div>
 <? } ?>
-<script type="text/javascript">
-
-	  	$(document).ready(function() {
-
-	  		$("#inline").fancybox({
-	  		closeBtn  : false,	
-	  		});
-	
- 			$(".fancybox-effects-c").fancybox({
-				//itemLoadCallback: getGroupItems,
-				closeBtn  : true,
-				arrows    : false,
-				nextClick : true,
-				openEffect : 'none',
-
-				helpers : {
-					title : {
-						type : 'inside'
-					},
-					thumbs : {
-						width  : 70,
-						height : 50
-					}
-				},
-	
-				afterLoad : function() {
-					//alert(this.title),
-					this.title = 'Изображение ' + (this.index + 1) + ' из ' + this.group.length + (this.title ? ' <br> ' + this.title : '');
-				}
-			});
- 
-		});
-	</script>
 	

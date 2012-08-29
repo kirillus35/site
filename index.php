@@ -44,6 +44,43 @@ $title = $title['title'] . ' | Сайт 10а класса'; ?>
 
   <!-- Add Media helper (this is optional) -->
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.3"></script>
+  <script type="text/javascript">
+
+      $(document).ready(function() {
+
+        $("#inline").fancybox({
+        });
+
+        $(".fancybox-effects-a").fancybox({
+          closeBtn  : true,
+          nextClick : false
+        });
+  
+      $(".fancybox-effects-c").fancybox({
+        //itemLoadCallback: getGroupItems,
+        closeBtn  : true,
+        arrows    : false,
+        nextClick : true,
+        openEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          thumbs : {
+            width  : 70,
+            height : 50
+          }
+        },
+  
+        afterLoad : function() {
+          //alert(this.title),
+          this.title = 'Изображение ' + (this.index + 1) + ' из ' + this.group.length + (this.title ? ' <br> ' + this.title : '');
+        }
+      });
+ 
+    });
+  </script>
 <style>
     
   .fancybox-custom .fancybox-skin {
@@ -62,27 +99,28 @@ html {
  background: white;
 }
 
-body {
-
- min-height:98%;
- height: 99%;
- background: white;
- color: #000;
- font-weight: normal;
- font-family: Arial, Verdana, Helvetica, Sans-Serif;
- font-size: 11pt;
+body{
+width: 100%;
+background: url(images/body1.jpg) repeat-x;
+background-size:100% 100%;
+float: center;
+background-position: top center;
+background-attachment: fixed;
+min-height:99%;
+height: 100%;
+color: #000;
+font-weight: normal;
+font-family: Arial, Verdana, Helvetica, Sans-Serif;
+font-size: 11pt;
 }
 
 
 div.page {
- width: 760px;
+ width: 800px;
  margin: auto;
-
- 
  height: auto !important;
  min-height:100%;
  height: 100%;
-
  background: white;
 }
 
@@ -97,8 +135,8 @@ div.page div.footer_guarantor {
 
 div.footer {
  margin: auto;
- margin-top: -22px;
- width: 760px;
+ margin-top: -30px;
+ width: 800px;
  height: 30px;
  clear: both;
  background: #427eab;
@@ -117,7 +155,7 @@ div.page div.header {
 
 div.page div.link {
  height: 90px;
- background: white;
+ 
 }
 
 
@@ -153,6 +191,12 @@ div.page div.mainbar {
   list-style-type: none;
   }
 
+  .class-photo{
+  float: left;
+  list-style-type: none;
+  width: 300px;
+  }
+
 .name_travels{
    float: left;
  list-style-type: none;
@@ -183,7 +227,7 @@ box-shadow:         0px 6px 20px rgba(50, 50, 50, 0.55);
   color: #0000d0;
   display: block;
    margin: 4px 7px;
-    padding: 4px 7px;
+  padding: 4px 7px;
 }
 
 .links a:hover, a:active ,a.active{
@@ -207,12 +251,23 @@ padding-left: 80px;
 padding-bottom: 4px;
 }
 
-div.travels a:link {
+div.class{
+padding-top: 5px;
+width: 760px;
+height: 120px;
+text-align: center;
+border-bottom: 1px solid #D0C7B7;
+font-size: 17; 
+padding-left: 50px;
+padding-bottom: 5px; 
+}
+
+div.travels,div.class a:link {
  text-decoration: none;
   color: #0000d0;
 }
 
-div.travels a:active{
+div.travels,div.class a:active{
   text-decoration: none;
   background-color: white;
   color:black ;
@@ -236,18 +291,23 @@ font-size: 16;
 font-weight: bold;	
 }
 .news{
-padding-top: 10px;
-padding-left: 10px;
-padding-bottom: 10px;
+padding-top: 11px;
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom: 7px;
 border-bottom: 1px solid #D0C7B7;	
 font-size: 13;
+text-align: justify;
+}
+.news_content{
+ text-indent: 30px; 
 }
 .title{
 	padding-top: 5px;
 	padding-bottom:5px;
-padding-left: 35px;	
+padding-left: 65px;	
 font-weight: bold;
-font-size: 18;	
+font-size: 19;	
 }
 .links{
  list-style-type: none;
@@ -257,6 +317,7 @@ font-size: 18;
 }
 .links li{
  padding-top: 5px;
+ padding-bottom: 5px;
 }
 
 .fot{
