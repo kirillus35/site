@@ -246,7 +246,7 @@ width: 760px;
 height: 160px;
  text-align: center;
 border-bottom: 1px solid #D0C7B7;
-font-size: 17; 
+font-size: 17px; 
 padding-left: 80px;
 padding-bottom: 4px;
 }
@@ -262,12 +262,12 @@ padding-left: 50px;
 padding-bottom: 5px; 
 }
 
-div.travels,div.class a:link {
+div.travels a:link {
  text-decoration: none;
   color: #0000d0;
 }
 
-div.travels,div.class a:active{
+div.travels a:active{
   text-decoration: none;
   background-color: white;
   color:black ;
@@ -277,6 +277,20 @@ div.travels,div.class a:active{
 box-shadow:         0px 0px 0px rgba(50, 50, 50, 0.55);
 }
 
+div.class a:active{
+  text-decoration: none;
+  background-color: white;
+  color:black ;
+  font-size: 20px;
+-webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    0px 0px 0px rgba(50, 50, 50, 0.55);
+box-shadow:         0px 0px 0px rgba(50, 50, 50, 0.55);
+}
+
+div.class a:link {
+ text-decoration: none;
+  color: #0000d0;
+}
 
 .mainbar table{
 width:100%;
