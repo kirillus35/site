@@ -8,8 +8,6 @@
 	?>
 <div class="travels">
 
-<ul>
-	
 		<?php
 		$f="images/$p[id].jpg";
 		$src = imagecreatefromjpeg($f);
@@ -21,19 +19,26 @@
 		?>
 
 
-    <li class="item"><a class="fancybox-effects-c" data-fancybox-group="<?=$w['id']?>" href="images/<?=$p['id']?>.jpg" title="<?=$p['content']?>"><img src="images/<?=$p['id']?>.jpg" width="<?=$new_w?>" height="150" alt="" /></a>
+    <div class="travels-photo">
+    	<a <?if (mysql_num_rows($photo)==1) {?>class="fancybox-effects-b"<?} else {?>class="fancybox-effects-c"<?}?> data-fancybox-group="<?=$w['id']?>" href="images/<?=$p['id']?>.jpg" title="<?=$p['content']?>">
+    		<img src="images/<?=$p['id']?>.jpg" width="<?=$new_w?>" height="150" alt="" />
+    	</a>
 	
 		<div style="display:none">
 			<?
 			while ($p = mysql_fetch_array($photo))
 			{
 			?>
-	 		<a class="fancybox-effects-c" data-fancybox-group="<?=$w['id']?>" href="images/<?=$p['id']?>.jpg" title="<?=$p['content']?>"><img src="images/<?=$p['id']?>.jpg" alt="" /></a>
+	 		<a class="fancybox-effects-c" data-fancybox-group="<?=$w['id']?>" href="images/<?=$p['id']?>.jpg" title="<?=$p['content']?>">
+	 			<img src="images/<?=$p['id']?>.jpg" alt="" />
+	 		</a>
 	  	<?}?>
 		</div>
-	</li>
-	<li class="name_travels"><a <?if ($w['content']) {?>id="inline" href="#<?=$w[id]?>"<?}?>> "<?=$w['name']?>" </a></li>	
-</ul>
+	</div>
+
+	<div class="name_travels">
+		<a <?if ($w['content']) {?>id="inline" href="#<?=$w[id]?>"<?}?>> "<?=$w['name']?>" </a>
+	</div>	
 	
 		<div style="display:none">
 			<div id="<?=$w['id']?>">

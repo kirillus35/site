@@ -1,4 +1,4 @@
-<table>
+<table class="timetable">
 	<tr class="str">
 		<td></td>
 		<td>Понедельник</td>
@@ -19,7 +19,7 @@
 				for($i=2; $i<8; $i++)
 				 {
 				 ?>
-			    <td><?=$r[$i]?></td>
+			    <td class="time-content"><?=$r[$i]?></td>
 				<? } ?>
 			   </tr>
 				<? } ?>	

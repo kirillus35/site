@@ -56,6 +56,24 @@ $title = $title['title'] . ' | Сайт 10а класса'; ?>
           nextClick : false
         });
   
+        $(".fancybox-effects-b").fancybox({
+        //itemLoadCallback: getGroupItems,
+        closeBtn  : true,
+        arrows    : false,
+        nextClick : false,
+        openEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          thumbs : {
+            width  : 70,
+            height : 50
+          }
+        }
+        });
+
       $(".fancybox-effects-c").fancybox({
         //itemLoadCallback: getGroupItems,
         closeBtn  : true,
@@ -197,6 +215,12 @@ div.page div.mainbar {
   width: 300px;
   }
 
+  .travels-photo{
+  float: left;
+  list-style-type: none;
+  width: 400px;
+  }
+
 .name_travels{
    float: left;
  list-style-type: none;
@@ -292,18 +316,30 @@ div.class a:link {
   color: #0000d0;
 }
 
-.mainbar table{
-width:100%;
+.timetable{
+width:99%;
 text-align: center;
-margin-right: 0px;
 margin-top: 50px;
-font-size: 15;
+margin-left: 4px;
+font-size: 14;
 }
 
-.str{
-font-size: 16;
-font-weight: bold;	
+.timetable td{
+ padding-top: 5px;
+ vertical-align: top;
 }
+.str{ 
+font-size: 16;
+font-weight: bold;
+color: white;	
+background-color:#2871a8; 
+opacity: 0.88;
+}
+
+.time-content{
+ background-color: #88dafc; 
+}
+
 .news{
 padding-top: 11px;
 padding-right: 15px;
