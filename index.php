@@ -120,7 +120,6 @@ html {
 body{
 width: 100%;
 background: url(images/body1.jpg) repeat-x;
-background-size:100% 100%;
 float: center;
 background-position: top center;
 background-attachment: fixed;
