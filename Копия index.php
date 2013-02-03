@@ -118,17 +118,26 @@ color: #000;
 font-size: 11pt;
 }
 
-body{
-background: url(images/body1.jpg) repeat-x;
-background-position: top center;
-background-attachment: fixed;
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100.01%;
+}*
+
+html {
+ height: 100%;
+ background: white;
 }
 
-div.bod{
-margin-top: -4px;
+body{
 width: 100%;
-height:100%;
-min-height:100%;
+background: url(images/body1.jpg) repeat-x;
+float: center;
+background-position: top center;
+background-attachment: fixed;
+min-height:99%;
+height: 100%;
 color: #000;
 font-weight: normal;
 font-family: Arial, Verdana, Helvetica, Sans-Serif;
@@ -137,12 +146,12 @@ font-size: 11pt;
 
 
 div.page {
- width: 900px;
+ width: 800px;
  margin: auto;
- height: auto;
+ height: auto !important;
  min-height:100%;
+ height: 100%;
  background: white;
- border-radius: 8px 8px 12px 12px;
 }
 
 
@@ -155,28 +164,28 @@ div.page div.footer_guarantor {
 
 
 div.footer {
- border-radius: 0px 0px 12px 12px;
  margin: auto;
- margin-top: -45px;
- width: 900px;
- height: 32px;
+ margin-top: -30px;
+ width: 800px;
+ height: 30px;
  clear: both;
- opacity:0.95;
  background: #427eab;
+ opacity: 0.92;
+ //border-top: 1px solid #cfba94;
  text-align: center;
  font-size: 12px;
 }
 
 
 div.page div.header {
- border-radius: 8px 8px 0px 0px;
- height: 104px;
+ height: 95px;
  background: #3a6a8e url(images/header_main1.jpg) no-repeat;
- background-size: 48%;
+ background-size: 49%;
 }
 
 div.page div.link {
- height: 50px;
+ height: 90px;
+ 
 }
 
 
@@ -199,6 +208,7 @@ div.page div.mainbar {
 
 .b-nav-list {
   overflow: hidden;
+  padding-top: 30px;
   margin-left: 30px;
   margin-right: 0px;
   color: #ffffff;
@@ -211,31 +221,24 @@ div.page div.mainbar {
   list-style-type: none;
   }
 
-.class-photo{
-float: right;
-width: 300px;
-margin-right: 150px;
-}
+  .class-photo{
+  float: left;
+  width: 300px;
+  }
 
-.name_class{
- float:left; 
+  .travels-photo{
+  float: left;
+  list-style-type: none;
+  width: 400px;
+  }
+
+.name_travels{
+ text-align: left;
  padding-top: 55px;
- margin-left: 100px;
+ padding-left: 315px;
 font-size: 20px; 
 }
   
-.travels-photo{
-float: left;
-width: 400px;
-}
-
-.name_travels{
-margin-right: 150px;  
-padding-top: 55px;
-font-size: 20px; 
-}
-
-
 
 div.link a:link , a:visited{
   color: #0000d0;
@@ -273,25 +276,23 @@ box-shadow:         0px 6px 20px rgba(50, 50, 50, 0.55);
 
 div.travels{
 padding-top: 10px;
-margin-left: 10px;
-width: 800px;
+width: 760px;
 height: 160px;
-text-align: center;
+ text-align: center;
 border-bottom: 1px solid #D0C7B7;
 font-size: 17px; 
 padding-left: 80px;
-padding-bottom: 5px;
+padding-bottom: 4px;
 }
 
 div.class{
-padding-top: 10px;
-margin-left: 10px;
-width: 800px;
+padding-top: 6px;
+width: 760px;
 height: 150px;
 text-align: center;
 border-bottom: 1px solid #D0C7B7;
 font-size: 17; 
-padding-left: 80px;
+padding-left: 50px;
 padding-bottom: 5px; 
 }
 
@@ -326,18 +327,18 @@ div.class a:link {
 }
 
 .timetable{
-width:98%;
+width:99.5%;
 text-align: center;
-margin-left: 9px;
 margin-top: 25px;
+margin-left: 2px;
 font-size: 14;
 }
 
 .timetable td{
-padding:1;
-padding-top: 3px;
-padding-bottom: 3px;
-vertical-align: center;
+  padding:1;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ vertical-align: center;
 }
 .str{ 
 font-size: 16;
@@ -353,11 +354,11 @@ margin-bottom: 5px;
  color: #073253;
 }
 
-div.news{
+.news{
 padding-top: 11px;
 padding-right: 15px;
 padding-left: 15px;
-padding-bottom: 5px;
+padding-bottom: 7px;
 border-bottom: 1px solid #D0C7B7;	
 font-size: 13;
 text-align: justify;
@@ -365,31 +366,36 @@ text-align: justify;
 .news_content{
  text-indent: 40px; 
 }
-
+.title12{
+float:center;
+padding-top: 5px;
+width: 760px;
+height: 32px;
+}
 .title{
-margin-left: 75px;  
-display:inline;	
+  float:left;
+padding-left: 65px;	
 font-weight: bold;
-font-size: 22;	
+font-size: 19;	
+width: 500px;
 color: #073253;
 }
-
 .titletime{
-float: right;  
-display:inline; 
-font-size: 12;
+text-align: right; 
+font-size: 12; 
+padding-right: 10px;
+margin-top: 8px;
 font-weight:600;
 color:#1577c3; 
-}
 
+}
 .links{
- margin-right: 35px; 
  list-style-type: none;
- float: center;
+ text-align: center;
  text-decoration:none; 
  
 }
-.links li{ 
+.links li{
  text-align: center;
  height: 10px;
  margin-top: 15px;
@@ -410,7 +416,7 @@ color:#1577c3;
 </head>
 
 <body>
-<div class="bod">
+	
 <div class="page">
 	<div class="header"></div>
 	<div class="link">
@@ -447,7 +453,6 @@ color:#1577c3;
 
 <div class="footer">
 <p class="fot">&copy; 2012 Кузнецов Кирилл & Кукушкин Тимофей</p>
-</div>
 </div>
 </body>
 </html>

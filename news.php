@@ -4,8 +4,8 @@
 	{
 	?>
 <div class="news">
-	<? echo date( 'd-m-Y в H:i', strtotime($row['date'])); ?>
 	<p class="title">"<?=$row['title']?>"</p>
+	<p class="titletime"><? echo date( 'd-m-Y в H:i', strtotime($row['date'])); ?></p>
 	<p class="news_content"> <?=$row['content']?> </p>
 </div>
 <? } ?>
