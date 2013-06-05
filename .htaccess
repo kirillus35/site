@@ -1,0 +1,10 @@
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php?page=class [QSA]
+RewriteRule ^timetable$ index.php?page=timetable [QSA]
+RewriteRule ^travels$ index.php?page=travels [QSA]
+RewriteRule ^news$ index.php?page=news [QSA]
+RewriteRule ^link$ index.php?page=link [QSA]
+RewriteRule ^links$ index.php?page=links [QSA]
+RewriteRule ^class$ index.php?page=class [QSA]

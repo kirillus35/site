@@ -1,5 +1,5 @@
 	<?
-	$time = mysql_query('SELECT * FROM news');
+	$time = mysql_query('SELECT * FROM news ORDER BY id DESC');
 	while ($row = mysql_fetch_array($time))
 	{
 	?>
