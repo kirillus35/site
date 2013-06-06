@@ -1,9 +1,10 @@
 site
-apache*
 images
+apache*
 forbidden
 restricted
 index.html
 test.php
 *.jpg
+*.gif
 	
