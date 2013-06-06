@@ -1,10 +1,7 @@
-pma
-xampp
-rkop
+site
 images
 forbidden
 restricted
-apache*
 index.html
 test.php
 *.jpg
