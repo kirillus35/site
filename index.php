@@ -28,11 +28,11 @@ $title = $title['title'] . ' | Сайт 10а класса'; ?>
   <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" />
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
 
-  <!-- Add Thumbnail helper (this is optional) -->
+  <!-- Add Thumbnail helper -->
   <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.6" />
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>
 
-  <!-- Add Media helper (this is optional) -->
+  <!-- Add Media helper -->
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.3"></script>
   <script type="text/javascript">
 
