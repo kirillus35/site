@@ -1,4 +1,4 @@
-<?
+﻿<?
 error_reporting('E_ALL & ~E_NOTICE & ~E_STRICT & ~E_WARNING');
 include('connect.php');
 ?>
@@ -17,14 +17,14 @@ $title = $title['title'] . ' | Сайт 10а класса'; ?>
   <!-- Add jQuery library -->
   <script type="text/javascript" src="fancybox/lib/jquery-1.8.0.min.js"></script>
 
-  <!-- Add mousewheel plugin (this is optional) -->
+  <!-- Add mousewheel plugin -->
   <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
   <!-- Add fancyBox main JS and CSS files -->
   <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.0"></script>
   <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.0" media="screen" />
 
-  <!-- Add Button helper (this is optional) -->
+  <!-- Add Button helper  -->
   <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" />
   <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
 
