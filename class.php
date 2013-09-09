@@ -1,5 +1,5 @@
 	<? 
-	$class = mysql_query("SELECT * FROM class ORDER BY 'name'");
+	$class = mysql_query("SELECT * FROM `class` ORDER BY `name`");
 	while ($c = mysql_fetch_array($class))
 	{
 	?>

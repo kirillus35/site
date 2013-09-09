@@ -1,11 +1,12 @@
 ﻿<?
 error_reporting('E_ALL & ~E_NOTICE & ~E_STRICT & ~E_WARNING');
 include('connect.php');
+include('utils.php');
 ?>
 
 <? $page = $_REQUEST['page'];
 
-$query = mysql_query("SELECT * FROM menu WHERE page='$page'") or die (mysql_error()); 
+$query = mysql_qw('SELECT * FROM menu WHERE `page`=?', $page) or die (mysql_error()); 
 $title = mysql_fetch_array($query);
 $title = $title['title'] . ' | Сайт 10а класса'; ?>
 
@@ -104,7 +105,7 @@ $title = $title['title'] . ' | Сайт 10а класса'; ?>
         <ul class="b-nav-list">
       	
             <?
-            $menu= mysql_query('SELECT * FROM menu');
+            $menu= mysql_qw('SELECT * FROM menu');
             while ($row = mysql_fetch_array($menu))
             {
             ?>  	 

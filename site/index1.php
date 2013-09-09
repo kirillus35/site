@@ -29,12 +29,20 @@
 	});
 	</script>
 <body>
-	<div id="loading" style="background: #999;">
+<!--    <div id="loading" style="background: #999;">
 		<div id="loading_into" style="background: #000;"></div>
-	</div>
-
-    <div class="progress progress-striped active">
-    <div class="bar" style="margin-left:10px"></div>
+	</div> 
+-->
+    <div class="navbar">
+    <div class="navbar-inner">
+    <div class="container">
+    ...
+    </div>
+    </div>
+    </div>
+    
+    <div class="progress progress-striped">
+    <div class="bar" style="margin-left:10px; padding-top:10px;"></div>
     </div>
 </body>
 </html>

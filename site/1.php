@@ -37,8 +37,8 @@ function clock()
 <button type="button" class="btn btn-success">Button</button>
 <button type="button" class="btn btn-warning">Button</button>
 <button type="button" class="btn btn-danger">Button</button>
-    <div class="progress progress-striped active">
-    <div class="bar" style="width: t+'%'"></div>
+    <div class="progress progress-striped">
+        <div class="bar" style="width: t+'%';"></div>
     </div>
 </body>
 </html>
